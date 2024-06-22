@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: hsl(0, 100%, 74%);
+  background-image: url("bg-intro-desktop.png");
+  background-size: 100%;
+  color: #fff;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+section {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form > input {
+  padding: 1rem;
+  margin: 0.2rem;
+  border-radius: 10px;
+  border: 1px solid hsl(246, 25%, 77%);
+}
+
+form > span {
+  font-size: 0.7rem;
+  text-align: right;
+  padding-right: 0.5rem;
+}
+
+button {
+  background-color: hsl(154, 59%, 51%);
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0px -4px 0px 0px rgba(0, 0, 0, 0.09) inset;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: hsl(155, 47%, 63%);
+}
+
+h1 {
+  color: #fff;
+  font-size: 2.5rem;
+  line-height: 2.4rem;
+  padding-bottom: 1rem;
+}
+
+.text-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 1rem;
+  box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.15);
+}
+
+.special-price {
+  border-radius: 10px;
+  background-color: hsl(248, 32%, 49%);
+  width: 100%;
+  text-align: center;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.15);
+}
+
+.special-price-accent {
+  font-weight: 600;
+}
+
+.agree {
+  color: hsl(246, 25%, 77%);
+  font-size: 0.6rem;
+  text-align: center;
+  padding-top: 0.5rem;
+}
+
+.agree > a {
+  color: hsl(0, 100%, 74%);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.success {
+  border: 2px solid hsl(154, 59%, 51%);
+}
+
+.error {
+  background-image: url("icon-error.svg");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 2rem) center;
+  padding-right: 3rem;
+  background-size: 1rem;
+  border: 2px solid hsl(0, 100%, 74%);
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    background-image: url("bg-intro-mobile.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .text-section {
+    text-align: center;
+  }
+}
